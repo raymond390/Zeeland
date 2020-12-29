@@ -122,11 +122,7 @@ module.exports.run = async (client, message, args) => {
      
                                          settedParent.awaitMessages(s => s.author.id == message.author.id, {max: 1}).then(antwoord => {
                                              var antwoord5 = antwoord.first();;
-                                             settedParent.send(vraag6);
-     
-                                             settedParent.awaitMessages(s => s.author.id == message.author.id, {max: 1}).then(antwoord => {
-                                                var antwoord6 = antwoord.first();;
-                                                settedParent.send(vraag7);
+                                             settedParent.send(vraag7);
 
                                                 settedParent.awaitMessages(s => s.author.id == message.author.id, {max: 1}).then(antwoord => {
                                                     var antwoord7 = antwoord.first();;
