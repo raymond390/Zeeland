@@ -89,7 +89,7 @@ module.exports.run = async (client, message, args) => {
                         .setColor("#00BFFF")
                         .setDescription("Wat is je motivatie Minimaal 50 woorden!!"); 
 
-                    var vraag7 = new discord.MessageEmbed()
+                    var vraag6 = new discord.MessageEmbed()
                         .setTitle("sollicitatie vraag 7")
                         .setColor("#00BFFF")
                         .setDescription(" Heb je nog vragen."); 
@@ -122,16 +122,16 @@ module.exports.run = async (client, message, args) => {
      
                                          settedParent.awaitMessages(s => s.author.id == message.author.id, {max: 1}).then(antwoord => {
                                              var antwoord5 = antwoord.first();;
-                                             settedParent.send(vraag7);
+                                             settedParent.send(vraag6);
 
                                                 settedParent.awaitMessages(s => s.author.id == message.author.id, {max: 1}).then(antwoord => {
-                                                    var antwoord7 = antwoord.first();;
+                                                    var antwoord6 = antwoord.first();;
                                                 
                                              var uitkomst = new discord.MessageEmbed()
                                              .setTitle("Bedankt voor het solliciteren")
                                              .setColor("#00FF00")
                                              .setTimestamp()
-                                             .setDescription(`**Waarom wil je Staff worden**: \n${antwoord0}\n\n**Wat doe je tegen AA**: \n${antwoord1}\n\n** Wat doe je tegen RDM**: \n${antwoord2}\n\n**Wat doe je tegen iemand die scheld.**: \n${antwoord3}\n\n**Wat wil je worden???**:\n${antwoord4}\n\n** Wat is je motivatie Minimaal 50 woorden!!**: \n${antwoord5}\n\n**Wat is je motivatie Minimaal 50 worden!!**: \n${antwoord7}\n\n**Heb je nog vragen. **\n${antwoord7}`)
+                                             .setDescription(`**Waarom wil je Staff worden**: \n${antwoord0}\n\n**Wat doe je tegen AA**: \n${antwoord1}\n\n** Wat doe je tegen RDM**: \n${antwoord2}\n\n**Wat doe je tegen iemand die scheld.**: \n${antwoord3}\n\n**Wat wil je worden???**:\n${antwoord4}\n\n** Wat is je motivatie Minimaal 50 woorden!!**: \n${antwoord5}\n\n\n**Heb je nog vragen. **\n${antwoord6}`)
                                          
      
                                              settedParent.bulkDelete(14).then(
