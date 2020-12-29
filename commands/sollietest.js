@@ -89,7 +89,7 @@ module.exports.run = async (client, message, args) => {
                         .setColor("#00BFFF")
                         .setDescription("Wat is je motivatie Minimaal 50 worden!!"); 
 
-                    var vraag6 = new discord.MessageEmbed()
+                    var vraag7 = new discord.MessageEmbed()
                         .setTitle("sollicitatie vraag 7")
                         .setColor("#00BFFF")
                         .setDescription(" Heb je nog vragen."); 
@@ -126,6 +126,7 @@ module.exports.run = async (client, message, args) => {
      
                                              settedParent.awaitMessages(s => s.author.id == message.author.id, {max: 1}).then(antwoord => {
                                                 var antwoord6 = antwoord.first();;
+                                                settedParent.send(vraag7);
 
                                                 settedParent.awaitMessages(s => s.author.id == message.author.id, {max: 1}).then(antwoord => {
                                                     var antwoord7 = antwoord.first();;
