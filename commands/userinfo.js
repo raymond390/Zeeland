@@ -8,7 +8,6 @@ module.exports.run = async (client, message, args) => {
     .setTitle("Server Info")
     .setImage(message.guild.iconURL)
     .setDescription(`${message.guild}'s Informatie`)
-    .addField("Creator", `De Creator Van deze server is ${message.guild.owner}`)
     .addField("Spelers", `Deze server heeft ${message.guild.memberCount} members`)
     .addField("Emoji Count", `Deze Server Heeft ${message.guild.emojis.cache.size} emojis`)
     .addField("Rollen", ` ${message.guild.roles.cache.map(r => `${r}`).join(" | ")} `)
