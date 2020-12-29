@@ -134,7 +134,7 @@ module.exports.run = async (client, message, args) => {
                                              .setDescription(`**Waarom wil je Staff worden**: \n${antwoord0}\n\n**Wat doe je tegen AA**: \n${antwoord1}\n\n** Wat doe je tegen RDM**: \n${antwoord2}\n\n**Wat doe je tegen iemand die scheld.**: \n${antwoord3}\n\n**Wat wil je worden???**:\n${antwoord4}\n\n** Wat is je motivatie Minimaal 50 woorden!!**: \n${antwoord5}\n\n**Heb je nog vragen. **\n${antwoord6}`)
                                          
      
-                                             settedParent.bulkDelete(14).then(
+                                             settedParent.bulkDelete(15).then(
                                                  settedParent.send(uitkomst)
                                              )
                                          })
