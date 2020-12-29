@@ -131,7 +131,7 @@ module.exports.run = async (client, message, args) => {
                                              .setTitle("Bedankt voor het solliciteren")
                                              .setColor("#00FF00")
                                              .setTimestamp()
-                                             .setDescription(`**Waarom wil je Staff worden**: \n${antwoord0}\n\n**Wat doe je tegen AA**: \n${antwoord1}\n\n** Wat doe je tegen RDM**: \n${antwoord2}\n\n**Wat doe je tegen iemand die scheld.**: \n${antwoord3}\n\n**Wat wil je worden???**:\n${antwoord4}\n\n** Wat is je motivatie Minimaal 50 worden!!**: \n${antwoord5}\n\n**Wat is je motivatie Minimaal 50 worden!!**: \n${antwoord6}\n\n**Heb je nog vragen. **\n${antwoord7}\n\n`)
+                                             .setDescription(`**Waarom wil je Staff worden**: \n${antwoord0}\n\n**Wat doe je tegen AA**: \n${antwoord1}\n\n** Wat doe je tegen RDM**: \n${antwoord2}\n\n**Wat doe je tegen iemand die scheld.**: \n${antwoord3}\n\n**Wat wil je worden???**:\n${antwoord4}\n\n** Wat is je motivatie Minimaal 50 worden!!**: \n${antwoord5}\n\n**Wat is je motivatie Minimaal 50 worden!!**: \n${antwoord6}\n\n**Heb je nog vragen. **\n`)
                                          
      
                                              settedParent.bulkDelete(14).then(
